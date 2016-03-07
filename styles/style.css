@@ -1,3 +1,58 @@
+.color-picker{
+    display: block;
+    width: 40px;
+    height: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.color-picker div{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0 1px 1px;
+}
+.color-picker div:nth-child(1){
+    background-color: #ff0000;
+}
+
+.color-picker div:nth-child(2){
+    background-color: #ff8c00;
+}
+
+.color-picker div:nth-child(3){
+    background-color: #ffff00;
+}
+
+.color-picker div:nth-child(4){
+    background-color: #008000;
+}
+
+.color-picker div:nth-child(5){
+    background-color: #0000ff;
+}
+
+.color-picker div:nth-child(6){
+    background-color: #8a2be2;
+}
+
+.row{
+    padding: 15px;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.row>div{
+    display: inline-block;
+}
+
+.hint{
+    width: 18px;
+    margin-left: 10px;
+    position: relative;
+}
+
 .circle{
     display: inline-block;
     width: 25px;
@@ -5,13 +60,22 @@
     border-radius: 50%;
     border: 1px solid #000;
     background-color: #fff;
+    margin-right: 10px;
 }
 
 .little-circle{
     display: inline-block;
+    position: relative;
     width: 5px;
     height: 5px;
     border-radius: 50%;
     border: 1px solid #000;
     background-color: #fff;
+    margin: 0 1px;
+    line-height: 7px;
+    top: 2px;
+}
+
+.little-circle:nth-child(n+3){
+    top: -5px;
 }
