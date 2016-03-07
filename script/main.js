@@ -2,6 +2,17 @@
  * Created by tati on 05.03.16.
  */
 
+var colors = ["#ff0000", "#ff8c00", "#ffff00", "#008000", "#0000ff", "#8a2be2"];
+var hints_colors = ["#fff", "#000"];
+
+var combination = [];
+var make_combination = function (){
+    for (var i = 0; i < 4; i++){
+        combination[i] = Math.floor(Math.random() * 4);
+        console.log(combination[i]);
+    }
+}();
+
 var ColorPicker = React.createClass({
     render: function (){
         return (
